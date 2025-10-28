@@ -1,5 +1,6 @@
 # mdtest1
 
+```mermaid
 graph LR
     subgraph "AWS Cloud"
         subgraph "Virtual Private Cloud (VPC)"
@@ -38,6 +39,9 @@ graph LR
         K[SSH Key Pair: flask-key.pem]
     end
 
+
     IAM -->|Controls Resource Access| "AWS Cloud"
     K -->|SSH Access (Port 22)| VM_APP
     K -->|SSH Access (Port 22)| VM_DB
+
+```
